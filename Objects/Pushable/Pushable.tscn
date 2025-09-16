@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhysu3lrx17ke"]
+
+[ext_resource type="Texture2D" uid="uid://qod3lno731xc" path="res://icon.svg" id="1_71tdc"]
+[ext_resource type="Script" uid="uid://w3n7k4cwf0jt" path="res://Objects/Pushable/Pushable.cs" id="1_p5tsa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_71tdc"]
+size = Vector2(32, 32)
+
+[node name="Pushable" type="StaticBody2D"]
+script = ExtResource("1_p5tsa")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 1, 0, 1)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_71tdc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_71tdc")
