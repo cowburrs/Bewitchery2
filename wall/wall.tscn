@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1dfb1nm0a22g"]
+
+[ext_resource type="Script" uid="uid://dim3h30u2avr0" path="res://wall/wall.gd" id="1_sef87"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_oh6kn"]
+
+[node name="Wall" type="Node2D"]
+script = ExtResource("1_sef87")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(4.7683716e-07, -2.3841858e-07)
+scale = Vector2(32, 32)
+texture = SubResource("PlaceholderTexture2D_oh6kn")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 100
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 22.0
+offset_bottom = 22.0
+text = "brother
+"

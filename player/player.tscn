@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkxtftt7p5rvk"]
+
+[ext_resource type="Script" uid="uid://8tmkv4picygf" path="res://player/player.gd" id="1_oul6g"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4flbx"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_oul6g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.20170438, 0.8765758, 1, 1)
+position = Vector2(4.7683716e-07, -2.3841858e-07)
+scale = Vector2(32, 32)
+texture = SubResource("PlaceholderTexture2D_4flbx")
