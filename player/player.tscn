@@ -12,3 +12,10 @@ modulate = Color(0.20170438, 0.8765758, 1, 1)
 position = Vector2(4.7683716e-07, -2.3841858e-07)
 scale = Vector2(32, 32)
 texture = SubResource("PlaceholderTexture2D_4flbx")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+text = "0"
