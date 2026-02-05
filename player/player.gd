@@ -12,35 +12,31 @@ func move(dir):
 		return null
 	return check
 
-func move_rec(dir, rec = true):
-	if rec:
-		moves = 0
-	var check = move(dir)
-	if check == null:
+func move_rec(dir):
+	moves = 0
+	while move(dir) == null:
 		moves += 1
-		move_rec(dir, false)
-	else:
-		check.text += moves
-		pass
+	move(dir).move(dir, moves)
+	if moves > 0:
+		get_parent().moves -= 1
 	return moves
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	cell = get_parent().local_to_map(position)
-	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("Special"):
 		print("SPECIAL")
+	if Input.is_action_just_pressed("Restart"):
+		get_tree().reload_current_scene()
 	if Input.is_action_just_pressed("Right"):
-		$RichTextLabel.text = str(move_rec(Vector2i.RIGHT))
+		move_rec(Vector2i.RIGHT)
 	elif Input.is_action_just_pressed("Left"):
-		$RichTextLabel.text = str(move_rec(Vector2i.LEFT))
+		move_rec(Vector2i.LEFT)
 	elif Input.is_action_just_pressed("Up"):
-		$RichTextLabel.text = str(move_rec(Vector2i.UP))
+		move_rec(Vector2i.UP)
 	elif Input.is_action_just_pressed("Down"):
-		$RichTextLabel.text = str(move_rec(Vector2i.DOWN))
-	pass
+		move_rec(Vector2i.DOWN)

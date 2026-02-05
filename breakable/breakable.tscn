@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://yf6nb7754u6g"]
+
+[ext_resource type="Script" uid="uid://tjmldhh6j47a" path="res://breakable/breakable.gd" id="1_t8jcs"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_i8ul4"]
+
+[node name="Pushable" type="Node2D"]
+script = ExtResource("1_t8jcs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(13.927472, 17.293373, 0, 1)
+position = Vector2(4.7683716e-07, -2.3841858e-07)
+scale = Vector2(32, 32)
+texture = SubResource("PlaceholderTexture2D_i8ul4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 100
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 22.0
+offset_bottom = 22.0
+text = "brother
+"

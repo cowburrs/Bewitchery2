@@ -1,14 +1,22 @@
 extends TileMapLayer
 
 
+@export
+var moves: int
+
 var characters = {}
 
 
-func setCharacters(key, value):
+func set_characters(key, value):
 	characters[key] = value
 
-func getCharacters(key):
-	return characters[key]	
+func get_characters(key):
+	return characters.get(key, null)
+
+func change_position(old, new):
+	if new != old:
+		characters[new] = characters[old]
+		characters.erase(old)
 
 
 # Called when the node enters the scene tree for the first time.
