@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdu8xi37d8n7h"]
+
+[ext_resource type="PackedScene" uid="uid://cw5mx46vx2t6k" path="res://tile_map.tscn" id="1_h3kd8"]
+[ext_resource type="Script" uid="uid://dp0ewnr8xk21e" path="res://Gamefile/levels/rich_text_label.gd" id="2_qork8"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="TileMapLayer2" parent="." instance=ExtResource("1_h3kd8")]
+position = Vector2(33, 71)
+moves = 4
+
+[node name="Camera2D" type="Camera2D" parent="TileMapLayer2"]
+position = Vector2(201, 176)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TileMapLayer2/Camera2D"]
+offset_left = -575.0
+offset_top = 285.0
+offset_right = -467.0
+offset_bottom = 318.0
+text = "nummoves"
+script = ExtResource("2_qork8")
+metadata/_edit_use_anchors_ = true

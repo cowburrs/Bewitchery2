@@ -1,0 +1,24 @@
+[gd_scene load_steps=9 format=3 uid="uid://cw5mx46vx2t6k"]
+
+[ext_resource type="PackedScene" uid="uid://c1dfb1nm0a22g" path="res://Gamefile/wall/wall.tscn" id="1_anah5"]
+[ext_resource type="PackedScene" uid="uid://dkxtftt7p5rvk" path="res://Gamefile/player/player.tscn" id="2_qtlnl"]
+[ext_resource type="PackedScene" uid="uid://273pvrtkhyqr" path="res://Gamefile/pushable/pushable.tscn" id="3_2cfip"]
+[ext_resource type="PackedScene" uid="uid://yf6nb7754u6g" path="res://Gamefile/breakable/breakable.tscn" id="4_sqirv"]
+[ext_resource type="PackedScene" uid="uid://c7lhfpk8hx8gg" path="res://Gamefile/touchable/touchable.tscn" id="5_c81vo"]
+[ext_resource type="Script" uid="uid://bp6vf1pxkqebx" path="res://Gamefile/levels/tile_map_layer.gd" id="6_anah5"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_5s8la"]
+scenes/1/scene = ExtResource("1_anah5")
+scenes/2/scene = ExtResource("2_qtlnl")
+scenes/3/scene = ExtResource("3_2cfip")
+scenes/4/scene = ExtResource("4_sqirv")
+scenes/5/scene = ExtResource("5_c81vo")
+
+[sub_resource type="TileSet" id="TileSet_fr6qw"]
+tile_size = Vector2i(40, 40)
+sources/1 = SubResource("TileSetScenesCollectionSource_5s8la")
+
+[node name="TileMapLayer2" type="TileMapLayer"]
+tile_set = SubResource("TileSet_fr6qw")
+script = ExtResource("6_anah5")
+moves = 2

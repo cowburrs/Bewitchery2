@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7lhfpk8hx8gg"]
+
+[ext_resource type="Script" uid="uid://b7dfmya0f03ev" path="res://Gamefile/touchable/touchable.gd" id="1_4whyo"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_oh6kn"]
+
+[node name="Wall" type="Node2D"]
+script = ExtResource("1_4whyo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1.4608889, 0.9694217, 2.4606943e-06, 1)
+position = Vector2(4.7683716e-07, -2.3841858e-07)
+scale = Vector2(32, 32)
+texture = SubResource("PlaceholderTexture2D_oh6kn")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 100
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 22.0
+offset_bottom = 22.0

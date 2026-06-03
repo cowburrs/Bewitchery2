@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://u8t64no1acrj"]
+
+[sub_resource type="GDScript" id="GDScript_oh6kn"]
+script/source = "extends Node2D
+class_name Wall
+
+var cell
+var moves = int() 
+
+func move(dir, num):
+	moves += num
+	pass
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	cell = get_parent().local_to_map(position)
+	get_parent().set_walls(cell, self)
+
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	# $RichTextLabel.text = str(moves)
+	pass
+"
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_oh6kn"]
+
+[node name="Wall" type="Node2D"]
+script = SubResource("GDScript_oh6kn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(4.7683716e-07, -2.3841858e-07)
+scale = Vector2(32, 32)
+texture = SubResource("PlaceholderTexture2D_oh6kn")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 100
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 22.0
+offset_bottom = 22.0

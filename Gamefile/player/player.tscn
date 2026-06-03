@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dkxtftt7p5rvk"]
 
-[ext_resource type="Script" uid="uid://8tmkv4picygf" path="res://player/player.gd" id="1_oul6g"]
+[ext_resource type="Script" uid="uid://8tmkv4picygf" path="res://Gamefile/player/player.gd" id="1_oul6g"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4flbx"]
 

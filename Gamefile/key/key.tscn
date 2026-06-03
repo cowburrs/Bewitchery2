@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://p5bsu2uri080"]
+
+[ext_resource type="Script" uid="uid://553pxxaweeb6" path="res://Gamefile/key/key.gd" id="1_13hmu"]
+[ext_resource type="Texture2D" uid="uid://tnbiau6dag4r" path="res://Sprites/spr_key.png" id="2_e2il0"]
+
+[node name="Pushable" type="Node2D"]
+script = ExtResource("1_13hmu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.7683716e-07, -2.3841858e-07)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_e2il0")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 100
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 22.0
+offset_bottom = 22.0
+text = "brother
+"

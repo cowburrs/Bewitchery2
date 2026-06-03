@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsax5id4clvth"]
+
+[ext_resource type="Script" uid="uid://h35k7jcigwxa" path="res://Gamefile/lock/lock.gd" id="1_hmu3s"]
+[ext_resource type="Texture2D" uid="uid://vsorqw8wvt3r" path="res://Sprites/spr_lock.png" id="2_jloui"]
+
+[node name="Wall" type="Node2D"]
+script = ExtResource("1_hmu3s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.7683716e-07, -2.3841858e-07)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_jloui")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 100
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 22.0
+offset_bottom = 22.0

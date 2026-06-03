@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://yf6nb7754u6g"]
 
-[ext_resource type="Script" uid="uid://tjmldhh6j47a" path="res://breakable/breakable.gd" id="1_t8jcs"]
+[ext_resource type="Script" uid="uid://tjmldhh6j47a" path="res://Gamefile/breakable/breakable.gd" id="1_t8jcs"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_i8ul4"]
 
@@ -19,5 +19,3 @@ offset_left = -16.0
 offset_top = -16.0
 offset_right = 22.0
 offset_bottom = 22.0
-text = "brother
-"

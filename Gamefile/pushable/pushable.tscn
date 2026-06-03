@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://273pvrtkhyqr"]
 
-[ext_resource type="Script" uid="uid://s1wy86i1l05e" path="res://pushable/pushable.gd" id="1_6a1ox"]
+[ext_resource type="Script" uid="uid://s1wy86i1l05e" path="res://Gamefile/pushable/pushable.gd" id="1_6a1ox"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_i8ul4"]
 
@@ -19,5 +19,3 @@ offset_left = -16.0
 offset_top = -16.0
 offset_right = 22.0
 offset_bottom = 22.0
-text = "brother
-"
